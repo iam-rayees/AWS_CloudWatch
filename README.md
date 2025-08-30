@@ -1,40 +1,25 @@
-# AWS CLOUD WATCH 
+1)AWS cloud watch looks for activities taking place on the AWS Cloud
 
-Welcome back to our "30 Days AWS Zero to Hero" series. Today, on Day 16, we will deep dive into AWS CloudWatch.
+2)AWS Cloud watch acts as a Gatekeeper, Watchmen for an AWS Account.
 
-What is AWS CloudWatch?
+3)AWS cloud watch service watch for AWS services such as creating EC2 instances, uploading content to S3 buckets, Creating and dealing with any resource on AWS cloud.
 
-AWS CloudWatch is a powerful monitoring and observability service provided by Amazon Web Services. It enables you to gain insights into the performance, health, and operational aspects of your AWS resources and applications. CloudWatch collects and tracks metrics, collects and monitors log files, and sets alarms to alert you on certain conditions.
+4)AWS cloud watch helps in monitoring, Alerting, Reporting and Logging. 
 
-Advantages of AWS CloudWatch:
+5)Using these features AWS cloud watch keeps track of activities taking place on a AWS account. 
 
-    Comprehensive Monitoring: CloudWatch allows you to monitor various AWS resources such as EC2 instances, RDS databases, Lambda functions, and more. You get a unified view of your entire AWS infrastructure.
+6)Monitoring: AWS cloud watch monitors AWS infrastructure and Application deployed on AWS cloud. 
 
-    Real-Time Metrics: It provides real-time monitoring of metrics, allowing you to respond quickly to any issues or anomalies that might arise.
+7)It also helps in getting real life metrics on a AWS account. Ex: How many API requests are received by the application deployed on EC2 instance. What was the CPU utilization, memory consumption on AWS EC2 instance in last 30 minutes. 
+Real life metrics helps to understand the details of AWS services. 
 
-    Automated Actions: With CloudWatch Alarms, you can set up automated actions like triggering an Auto Scaling group to scale in or out based on certain conditions.
+8)Alarms: Metrics and Alarm are closely related to each other. If CPU utilization reached 80%, then slack notifications will be send to the team. 
 
-    Log Insights: CloudWatch Insights lets you analyze and search log data from various AWS services, making it easier to troubleshoot problems and identify trends.
+9)Logging: This feature of AWS cloud watch gives us Log insights. It helps us to know which AWS services are communicating with each other. 
+Ex: While executing AWS CICD pipeline, AWS EC2 was communicating with AWS code deploy service.
 
-    Dashboards and Visualization: Create custom dashboards to visualize your application and infrastructure metrics in one place, making it easier to understand the overall health of your system.
+10)Custom Metrics: AWS cloud watch tracks the CPU utilization by default. But it do not track the memory utilization out of the box. Hence using custom metrics we can send metrics for memory utilization to the AWS cloud watch service. So one can set up alarms to send notifications when memory utilization reaches threshold value. 
 
-Problem Solving with AWS CloudWatch:
+11)By integrating Cloud watch with Lambda functions, it also helps in Cloud Cost Optimization.
 
-CloudWatch helps address several critical challenges, including:
-
-    Resource Utilization: Tracking resource utilization and performance metrics to optimize your AWS infrastructure efficiently.
-    Proactive Monitoring: Identifying and resolving issues before they impact your applications or users.
-    Troubleshooting: Analyzing logs and metrics to troubleshoot problems and reduce downtime.
-    Scalability: Automatically scaling resources based on demand to ensure optimal performance and cost efficiency.
-
-Practical Use Cases of AWS CloudWatch:
-
-    Auto Scaling: CloudWatch can trigger Auto Scaling actions based on defined thresholds. For example, you can automatically scale in or out based on CPU utilization or request counts.
-
-    Resource Monitoring: Monitor EC2 instances, RDS databases, DynamoDB tables, and other AWS resources to gain insights into their performance and health.
-
-    Application Insights: Track application-specific metrics to monitor the performance of your applications and identify potential bottlenecks.
-
-    Log Analysis: Use CloudWatch Logs Insights to analyze log data, identify patterns, and troubleshoot issues in real-time.
-
-    Billing and Cost Monitoring: CloudWatch can help you monitor your AWS billing and usage patterns, enabling you to optimize costs.
+12)Scaling: By Integrating Cloud watch with Autoscaling Group, When CPU utilization reaches 80% threshold value , It will notify Auto scaling group to increase the instance count.  
